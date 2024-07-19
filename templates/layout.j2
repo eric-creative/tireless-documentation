@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <div class="w-full min-h-screen">
+        <header class="w-full top-0 bg-white sticky h-20 flex justify-between items-center px-5 shadow">
+            <a href="/" class="permanent-marker-regular text-5xl p-3">Tireless.</a>
+            <form class="border-r hidden border-l h-full w-full py-5 px-5  justify-center items-center">
+                <img class="w-12 h-12 p-3" src="{{ url_for('static', filename='svg/search.svg')}}" />
+                <input placeholder="Search..." class="h-full w-full text-lg px-5 outline-none" />
+            </form>
+            <a href="https://github.com/eric-creative/tireless" target="_blank" class="p-3">
+                <img class="w-10 h-10 md:w-12 md:h-12" src="{{ url_for('static', filename='svg/github.svg')}}" />
+            </a>
+        </header>
+        {% block content %}
+        {# content goes here #}
+        {% endblock %}
+        <footer class="w-full h-auto border-t p-5 flex justify-center items-center bottom-0">
+            <p>copyright &copy; tireless 2024</p>
+        </footer>
+    </div>
+</body>
+
+</html>

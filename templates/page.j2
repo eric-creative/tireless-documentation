@@ -1,0 +1,16 @@
+<!-- page.j2 -->
+{% extends "layout.j2" %}
+
+{% block title %}
+	Tireless
+{% endblock %}
+
+{% block content %}
+    <!-- Your specific content for the index page -->
+    <div
+            class="w-full px-5 md:px-0 md:max-w-4xl container mx-auto py-5 prose prose-base prose-a:text-blue-600 ">
+        {{ contents }}
+    </div>
+    <!-- Other content here -->
+{% endblock %}
+
