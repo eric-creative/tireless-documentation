@@ -22,7 +22,7 @@ Enough preamble! Let’s summon Tireless:
 
 ### Install Tireless (because even wizards need pip):
 ```python
-pip install tireless
+pip install -i https://test.pypi.org/simple/ tireless==0.1.5
 ```
 ### Create Your Project:
 Make the directory of your project and get into it

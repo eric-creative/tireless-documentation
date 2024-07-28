@@ -1500,10 +1500,6 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:flex{
-    display: flex;
-  }
-
   .md\:h-12{
     height: 3rem;
   }
